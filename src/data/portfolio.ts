@@ -9,5 +9,5 @@ export const projects = [
 ]
 export type Project = typeof projects[number]
 export function pageMeta(title: string, description: string) {
-  return { meta: [{ title: `${title} — Minna` }, { name: 'description', content: description }, { property: 'og:title', content: `${title} — Minna` }, { property: 'og:description', content: description }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }
+  return { meta: [{ title: `${title} — Minna Jansson` }, { name: 'description', content: description }, { property: 'og:title', content: `${title} — Minna Jansson` }, { property: 'og:description', content: description }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }
 }
