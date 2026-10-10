@@ -79,9 +79,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Minna — Portfolio" },
-      { name: "description", content: "Selected work and creative explorations by Minna." },
-      { name: "author", content: "Minna" },
+      { title: "Minna Jansson — Portfolio" },
+      { name: "description", content: "Selected work and creative explorations by Minna Jansson, student in media technology." },
+      { name: "author", content: "Minna Jansson" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
