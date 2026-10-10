@@ -2,9 +2,6 @@ import inskolningsappCover from '@/assets/inskolningsapp-cover.png.asset.json'
 import inskolningsappResult from '@/assets/result.png.asset.json'
 import inskolningsappObservation from '@/assets/observation.png.asset.json'
 import inskolningsappTesting from '@/assets/testing.png.asset.json'
-import folio from '@/assets/folio.jpg'
-import form from '@/assets/form.jpg'
-import still from '@/assets/still.jpg'
 
 export interface ProjectImage {
   src: string
@@ -45,7 +42,7 @@ export const projects: Project[] = [
     subtitleStrong: 'Karolinska sjukhuset',
     category: 'Product design',
     tags: ['UX / UI design', 'Mobile app', 'Research'],
-    year: '',
+    year: '2026',
     image: inskolningsappCover.url,
     imageAlt: 'Person i skötaruniform som testar inskolningsappens prototyp på en smartphone',
     role: '',
@@ -79,54 +76,6 @@ export const projects: Project[] = [
         height: 1000,
       },
     ],
-  },
-  {
-    slug: 'folio',
-    title: 'Folio',
-    subtitle: 'A clearer picture of your finances.',
-    category: 'Product design',
-    tags: ['UX / UI design', 'Web application'],
-    year: '2026',
-    image: folio,
-    role: 'Product designer',
-    duration: '6 weeks',
-    description: 'A concept for making everyday finances feel approachable. Folio brings spending, savings, and sustainable choices together in one considered experience.',
-    challenge: 'Financial information can feel overwhelming. The goal was to turn a complex overview into a calm, readable experience that helps people understand where their money goes.',
-    approach: 'The concept explores clear visual hierarchy, plain-language labels, and purposeful data visualization. A restrained green palette connects financial progress with more sustainable everyday decisions.',
-    outcome: 'A cohesive dashboard concept, with reusable interface patterns for spending, savings goals, and personal impact.',
-    sample: true,
-  },
-  {
-    slug: 'form',
-    title: 'Form',
-    subtitle: 'A digital home for a fresh perspective.',
-    category: 'Web design',
-    tags: ['Web design', 'Visual identity'],
-    year: '2026',
-    image: form,
-    role: 'Web & visual designer',
-    duration: '4 weeks',
-    description: 'An independent editorial concept exploring the intersection of art, culture, and design. Form puts compelling stories and imagery at the center.',
-    challenge: 'Create a distinctive editorial experience that feels expressive without distracting from the stories themselves.',
-    approach: 'A bold typographic identity meets a flexible editorial grid. Generous space, oversized photography, and a single expressive accent establish a recognizable visual language.',
-    outcome: 'An editorial homepage concept and visual direction that can extend across features, interviews, and essays.',
-    sample: true,
-  },
-  {
-    slug: 'still',
-    title: 'Still',
-    subtitle: 'Small rituals. A little more balance.',
-    category: 'Product design',
-    tags: ['Mobile app', 'UX / UI design'],
-    year: '2025',
-    image: still,
-    role: 'UX / UI designer',
-    duration: '5 weeks',
-    description: 'A mobile wellbeing concept focused on simple, achievable daily rituals. Still makes space for progress without the pressure of perfection.',
-    challenge: 'Habit tracking can become another source of pressure. This concept asks how an app can encourage consistency while remaining gentle and supportive.',
-    approach: 'Warm colors, simple check-ins, and readable progress views keep the experience focused. Each screen supports one clear task, from selecting a ritual to reviewing the week.',
-    outcome: 'A mobile app concept with daily ritual tracking and a weekly reflection experience.',
-    sample: true,
   },
 ]
 

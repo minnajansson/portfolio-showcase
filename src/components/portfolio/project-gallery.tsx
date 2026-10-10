@@ -7,11 +7,12 @@ import { projects } from '@/data/portfolio'
 
 export function ProjectGallery() {
   const [filter, setFilter] = useState('All projects')
+  const categories = ['All projects', ...Array.from(new Set(projects.map(project => project.category)))]
   const filtered = projects.filter(project => filter === 'All projects' || project.category === filter)
   return <section aria-label="Selected work">
     <div className="section-bar">
       <div className="flex items-baseline gap-3"><h2 className="text-xl font-semibold">Selected work</h2><span className="text-xs text-muted-foreground">({String(projects.length).padStart(2,'0')})</span></div>
-      <div className="flex flex-wrap gap-1" aria-label="Filter projects">{['All projects','Product design','Web design'].map(item => <Button key={item} variant={filter === item ? 'secondary' : 'ghost'} size="sm" aria-pressed={filter === item} onClick={() => setFilter(item)}>{item}</Button>)}</div>
+      <div className="flex flex-wrap gap-1" aria-label="Filter projects">{categories.map(item => <Button key={item} variant={filter === item ? 'secondary' : 'ghost'} size="sm" aria-pressed={filter === item} onClick={() => setFilter(item)}>{item}</Button>)}</div>
     </div>
     <div className="project-grid">{filtered.map((project, index) => <Link key={project.slug} to="/projects/$slug" params={{slug:project.slug}} className="project-link block" aria-label={`View ${project.title} project`}>
       <div className="project-image"><img src={project.image} alt={project.imageAlt ?? `${project.title} interface design concept`} width={1000} height={689} loading={index === 0 ? 'eager' : 'lazy'} /></div>

@@ -6,7 +6,7 @@ import { projects, pageMeta } from '@/data/portfolio'
 export const Route = createFileRoute('/projects/$slug')({ loader: ({params}) => { const project = projects.find(p => p.slug === params.slug); if (!project) throw notFound(); return project }, head: ({loaderData}) => pageMeta(loaderData?.title ?? 'Project not found', loaderData?.description || loaderData?.challenge || 'This portfolio project could not be found.'), component: ProjectDetail })
 function ProjectDetail() {
  const project = Route.useLoaderData()
- const next = projects[(projects.findIndex(p => p.slug === project.slug) + 1) % projects.length]
+ const next = projects.length > 1 ? projects[(projects.findIndex(p => p.slug === project.slug) + 1) % projects.length] : undefined
  const facts = ([['Role', project.role], ['Timeline', project.duration], ['Collaboration', project.collaboration], ['Focus', project.tags.join(', ')]].filter(([, value]) => Boolean(value)) as [string, string][])
  const sections = ([['Overview', project.description], ['The challenge', project.challenge], ['The approach', project.approach], ['The outcome', project.outcome]].filter(([, value]) => Boolean(value)) as [string, string][])
  const eyebrow = [project.category, project.year].filter(Boolean).join(' / ')
