@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep portfolio content in a shared browser-safe data module so project lists and detail pages stay consistent.
+- Use separate TanStack routes for work, about, contact, and individual project case studies so each page can be shared directly.
