@@ -1,5 +1,4 @@
 import inskolningsappCover from '@/assets/inskolningsapp-cover.png.asset.json'
-import inskolningsappResult from '@/assets/result.png.asset.json'
 import inskolningsappObservation from '@/assets/observation.png.asset.json'
 import inskolningsappTesting from '@/assets/testing.png.asset.json'
 
@@ -44,7 +43,7 @@ export const projects: Project[] = [
     tags: ['UX / UI design', 'Mobile app', 'Research'],
     year: '2026',
     image: inskolningsappCover.url,
-    imageAlt: 'Person i skötaruniform som testar inskolningsappens prototyp på en smartphone',
+    imageAlt: 'Skärmar ur prototypen av inskolningsappen, med texten Tryggare inskolning, starkare kompetens, säkrare vård',
     role: '',
     duration: '',
     collaboration: 'Karolinska universitetssjukhuset',
@@ -53,12 +52,11 @@ export const projects: Project[] = [
     approach: 'Arbetet utfördes genom intervjuer och observationer med chefer, anställda och nyanställda på plats på akutmottagningen för att bilda en förståelse för kontexten och målgruppen. Sedan definierades materialet för att konkretisera insikter, behov och mål. Vidare utfördes idégenerering och prototyping för att visualisera lösningar som sedan testades på plats på akutmottagningen och förfinades.',
     outcome: 'Resultatet blev en prototyp av en app där information, inlärning, dokumentation, återkoppling och kommunikation under inskolningsprocessen samlas på samma ställe digitalt.',
     hero: {
-      src: inskolningsappResult.url,
+      src: inskolningsappCover.url,
       alt: 'Sju skärmar ur prototypen av inskolningsappen, med texten Tryggare inskolning, starkare kompetens, säkrare vård',
       caption: 'Prototypens gränssnitt',
-      width: 1000,
-      height: 1000,
-      square: true,
+      width: 1566,
+      height: 1080,
     },
     process: [
       {
