@@ -91,7 +91,7 @@
 @keyframes reveal { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
 @media(max-width: 700px) {
   .site-width { width: calc(100% - 40px); }
-  .site-header { height:80px; }
+  .site-header { min-height:80px; height:auto; flex-wrap:wrap; column-gap:20px; row-gap:8px; padding-block:18px; }
   .wordmark { font-size:17px; white-space:nowrap; }
   .nav-link { font-size:12px; }
   .intro { padding-top:55px; padding-bottom:48px; }
