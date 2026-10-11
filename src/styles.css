@@ -76,7 +76,7 @@
   .contact-band { margin-top: 90px; padding-block: 57px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .page-heading { font-size: 56px; line-height: 1.2; font-weight: 500; margin-top: 22px; }
   .detail-image { width:100%; border-radius: 6px; margin-top:40px; }
-  .detail-hero { margin-top:40px; max-width:min(880px, 80%); margin-inline:auto; }
+  .detail-hero { margin-top:40px; max-width:min(880px, 80%); }
   .detail-hero img { width:100%; height:auto; display:block; border-radius: 6px; }
   .detail-hero--square { max-width:720px; margin-inline:auto; }
   .case-figure { margin:0; }
