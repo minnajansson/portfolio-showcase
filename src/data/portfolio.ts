@@ -55,8 +55,8 @@ export const projects: Project[] = [
       src: inskolningsappCover.url,
       alt: 'Sju skärmar ur prototypen av inskolningsappen, med texten Tryggare inskolning, starkare kompetens, säkrare vård',
       caption: 'Prototypens gränssnitt',
-      width: 1566,
-      height: 1080,
+      width: 1769,
+      height: 1220,
     },
     process: [
       {
