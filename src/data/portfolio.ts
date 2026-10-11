@@ -1,4 +1,4 @@
-import inskolningsappCover from '@/assets/inskolningsapp-cover.png.asset.json'
+import inskolningsappCover from '@/assets/testing.png.asset.json'
 import inskolningsappObservation from '@/assets/observation.png.asset.json'
 import inskolningsappTesting from '@/assets/testing.png.asset.json'
 
