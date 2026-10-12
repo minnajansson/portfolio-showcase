@@ -6,6 +6,7 @@ import type { Project } from '@/data/portfolio'
  */
 export function ProjectSubtitle({ project, className }: { project: Project; className?: string }) {
   const strong = project.subtitleStrong
+  if (!project.subtitle) return null
   if (!strong || !project.subtitle.includes(strong)) return <p className={className}>{project.subtitle}</p>
   const [before, after] = project.subtitle.split(strong)
   return (
