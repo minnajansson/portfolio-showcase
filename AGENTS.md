@@ -12,3 +12,4 @@
 - Keep portfolio content in a shared browser-safe data module so project lists and detail pages stay consistent.
 - Use separate TanStack routes for work, about, contact, and individual project case studies so each page can be shared directly.
 - Store optional project references alongside project data and render them in the facts list so references remain project-specific.
+- Keep gallery ordering in the shared portfolio data; distribute alternating entries into independent desktop columns and restore sequential mobile order to avoid masonry gaps.

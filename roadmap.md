@@ -1,4 +1,6 @@
 # Portfolio
+- [x] Expand additional image rows across both text columns while keeping three images per desktop row.
+- [x] Set requested homepage project order and verify desktop and mobile layouts.
 - [x] Remove desktop gaps between mixed-format project covers while preserving mobile layout.
 - [x] Arrange smaller additional project images three per desktop row aligned to the text width and verify.
 - [x] Place all remaining uploaded images on their project pages and restore the homepage availability dot.
