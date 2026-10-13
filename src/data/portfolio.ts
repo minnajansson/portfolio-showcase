@@ -121,6 +121,7 @@ export const projects: Project[] = [
   {
     slug: 'webbplats-med-databas',
     title: 'Webbplats med databas',
+    subtitle: 'Webbutveckling med JavaScript, PHP och SQL',
     category: 'Webbutveckling',
     year: '2025',
     tags: ['Frontend', 'Backend', 'Databas'],
@@ -138,6 +139,7 @@ export const projects: Project[] = [
   {
     slug: 'webbplats-i-wordpress',
     title: 'Webbplats i WordPress',
+    subtitle: 'Webbutveckling med Wordpress och sökoptimering',
     category: 'Webbutveckling',
     year: '2025',
     tags: ['Webbdesign', 'CMS', 'SEO'],
