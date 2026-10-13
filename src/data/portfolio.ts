@@ -196,6 +196,13 @@ export const projects: Project[] = [
 
 export type ProjectEntry = Project
 
+const galleryOrder = ['inskolningsapp', 'sodersrunners', 'aterbruk-huddinge', 'webbplats-i-wordpress']
+export const galleryProjects = [...projects].sort((a, b) => {
+  const aRank = galleryOrder.indexOf(a.slug)
+  const bRank = galleryOrder.indexOf(b.slug)
+  return (aRank < 0 ? galleryOrder.length : aRank) - (bRank < 0 ? galleryOrder.length : bRank)
+})
+
 export function pageMeta(title: string, description: string) {
   return { meta: [{ title: `${title} — Minna Jansson` }, { name: 'description', content: description }, { property: 'og:title', content: `${title} — Minna Jansson` }, { property: 'og:description', content: description }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }
 }
