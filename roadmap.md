@@ -1,4 +1,6 @@
 # Portfolio
+- [ ] Remove desktop gaps between mixed-format project covers while preserving mobile layout.
+- [ ] Arrange smaller additional project images three per desktop row aligned to the text width and verify.
 - [x] Place all remaining uploaded images on their project pages and restore the homepage availability dot.
 - [x] Preserve landscape cover size, use A4-like portrait covers, and enlarge detail images aligned with the project text.
 - [x] Add Huddinge reference between collaboration and focus and verify the pages.
