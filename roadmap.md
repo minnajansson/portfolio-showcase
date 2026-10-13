@@ -1,7 +1,7 @@
 # Portfolio
-- [ ] Place all remaining uploaded images on their project pages and restore the homepage availability dot.
-- [ ] Preserve landscape cover size, use A4-like portrait covers, and enlarge detail images aligned with the project text.
-- [ ] Add Huddinge reference between collaboration and focus and verify the pages.
+- [x] Place all remaining uploaded images on their project pages and restore the homepage availability dot.
+- [x] Preserve landscape cover size, use A4-like portrait covers, and enlarge detail images aligned with the project text.
+- [x] Add Huddinge reference between collaboration and focus and verify the pages.
 - [x] Make interest text smaller and translate all website copy into Swedish.
 - [x] Use Karolinska universitetssjukhuset in the subtitle, add "6 veckor" as the time spent, keep the interest line on one line, and show the case-study image slightly smaller.
 - [x] Build minimal portfolio, project browsing, and project detail pages.
