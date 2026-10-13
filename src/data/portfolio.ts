@@ -9,6 +9,15 @@ import wordpress from '@/assets/wordpress.webp.asset.json'
 import poster from '@/assets/poster.webp.asset.json'
 import vuxen from '@/assets/gymnasiearbetevuxen.webp.asset.json'
 import smabarn from '@/assets/gymnasiearbetesmabarn.webp.asset.json'
+import enkat from '@/assets/enkat.webp.asset.json'
+import inlagg from '@/assets/inlagg.webp.asset.json'
+import lopp from '@/assets/lopp.webp.asset.json'
+import styrelsemote from '@/assets/styrelsemote.webp.asset.json'
+import traning from '@/assets/traning.webp.asset.json'
+import styrelsepresentation from '@/assets/styrelsepresentation.webp.asset.json'
+import bild1 from '@/assets/bild1.webp.asset.json'
+import bild2 from '@/assets/bild2.webp.asset.json'
+import moodboard from '@/assets/moodboard.webp.asset.json'
 
 export interface ProjectImage {
   src: string
@@ -29,6 +38,7 @@ export interface Project {
   hero: ProjectImage
   duration?: string
   collaboration?: string
+  reference?: { name: string; role: string; contact: string }
   tools?: string
   focus?: string
   link?: string
@@ -70,6 +80,7 @@ export const projects: Project[] = [
     hero: { src: trelasningar.url, alt: 'Tre designförslag: dela digitalt, centraler för återbruk och pantsystem för förpackningar', caption: 'Tre designförslag för ökat återbruk bland villahushåll.', width: 1920, height: 1080 },
     duration: '4 veckor',
     collaboration: 'Huddinge kommun',
+    reference: { name: 'Sara Tunheden', role: 'Verksamhetsutvecklare Innovation · Huddinge kommun', contact: 'Kontaktuppgifter lämnas på begäran.' },
     focus: 'Tjänstedesign, användarundersökningar, konceptutveckling, prototyping',
     sections: [
       { title: 'Utmaningen', text: 'Uppdraget från Huddinge kommun var att ta fram tre konkreta designlösningar som främjar återbruk bland boende i villa.' },
@@ -78,6 +89,7 @@ export const projects: Project[] = [
     ],
     images: [
       { src: intervjuer.url, alt: 'Studenter intervjuar en förbipasserande vid en gångtunnel', caption: 'Intervjuer som underlag för projektets behovsanalys.', width: 1920, height: 1358 },
+      { src: enkat.url, alt: 'Stapeldiagram över enkätens svar om hinder för att göra sig av med saker', caption: 'Resultat från enkätundersökningen.', width: 1920, height: 1358 },
     ],
   },
   {
@@ -95,6 +107,15 @@ export const projects: Project[] = [
     sections: [
       { title: 'Grafisk identitet', text: 'Utveckling av föreningens grafiska identitet i samband med uppstarten och etableringen av SödersRunners.' },
       { title: 'Marknadsföring', text: 'Som marknadsföringsansvarig ansvarade jag för grafiskt innehåll och fotografering för föreningens kommunikation. Arbetet omfattade inlägg för sociala medier samt affischer för fysisk marknadsföring. Samtliga fotografier är tagna av mig.' },
+    ],
+    images: [
+      { src: inlagg.url, alt: 'SödersRunners inlägg med löpare och inbjudan att springa tillsammans', caption: 'Inlägg för sociala medier.', width: 1536, height: 1920 },
+      { src: lopp.url, alt: 'SödersRunners affisch för Stadium Night Run', caption: 'Affisch för Stadium Night Run.', width: 1536, height: 1920 },
+      { src: styrelsemote.url, alt: 'SödersRunners affisch med inbjudan till årsmöte', caption: 'Inbjudan till årsmöte.', width: 1536, height: 1920 },
+      { src: traning.url, alt: 'SödersRunners träningsaffisch med texten Styrka X Intervaller', caption: 'Träningsaffisch.', width: 1536, height: 1920 },
+      { src: styrelsepresentation.url, alt: 'Presentation av SödersRunners ordförande Yassar Anwari', caption: 'Styrelsepresentation.', width: 1536, height: 1920 },
+      { src: bild1.url, alt: 'Två löpare från SödersRunners på en skogsstig', caption: 'Fotografi för SödersRunners.', width: 1536, height: 1920 },
+      { src: bild2.url, alt: 'En sittande löpare mellan två löpare i rörelse i skogen', caption: 'Fotografi för SödersRunners.', width: 1536, height: 1920 },
     ],
   },
   {
@@ -146,6 +167,9 @@ export const projects: Project[] = [
       { title: 'Uppgiften', text: 'Att skapa en poster med utgångspunkt i FN:s globala mål 14: Hav och marina resurser, med popkonst som vald konststil.' },
       { title: 'Processen', text: 'Arbetet inleddes med en moodboard baserad på inspiration från etablerade popkonstnärer. Moodboarden användes som utgångspunkt för att utveckla posterns visuella uttryck, som sedan skapades i Adobe Illustrator.' },
       { title: 'Resultatet', text: 'En grafisk poster som kombinerar popkonstens visuella uttryck med temat bevarande av hav och marina resurser.' },
+    ],
+    images: [
+      { src: moodboard.url, alt: 'Moodboard med popkonst, havsmotiv och färgprover', caption: 'Moodboard med popkonstinspiration.', width: 1920, height: 1358 },
     ],
   },
   {
