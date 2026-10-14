@@ -11,3 +11,4 @@
 - [x] Build minimal portfolio, project browsing, and project detail pages.
 - [x] Add about and contact pages with clearly replaceable sample information.
 - [x] Verify navigation, filters, and mobile layout.
+- [x] Slå ihop Om mig och Kontakt till en sida (Om mig/kontakt) med porträtt och kontaktdel, omdirigera gamla kontaktadressen.

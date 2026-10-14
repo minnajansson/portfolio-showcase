@@ -91,6 +91,7 @@
   .case-figure { min-width:0; }
   .subtitle-strong { color:var(--foreground); font-weight:700; }
   .prose-text { font-size: 16px; line-height: 1.9; color:var(--muted-foreground); }
+  .about-portrait { width:100%; max-width:340px; height:auto; display:block; border-radius:6px; }
   .footer { border-top: 1px solid var(--border); padding-block: 26px; display:flex; justify-content:space-between; gap:20px; font-size:11px; color:var(--muted-foreground); }
   .fade-in { animation: reveal 600ms ease both; }
 }
