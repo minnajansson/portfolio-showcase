@@ -92,9 +92,9 @@
   .subtitle-strong { color:var(--foreground); font-weight:700; }
   .prose-text { font-size: 16px; line-height: 1.9; color:var(--muted-foreground); }
   .about-portrait { width:100%; max-width:340px; height:auto; display:block; border-radius:6px; }
-  .contact-facts { list-style:none; display:flex; flex-wrap:wrap; gap:14px 40px; margin-top:30px; padding-block:6px; }
-  .contact-fact { display:flex; align-items:center; gap:9px; font-size:13px; }
-  .contact-fact > svg { width:14px; height:14px; color:var(--muted-foreground); flex:none; }
+  .contact-facts { list-style:none; display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:16px; padding-block:0; }
+  .contact-fact { display:flex; align-items:center; gap:7px; font-size:12px; }
+  .contact-fact > svg { width:13px; height:13px; color:var(--muted-foreground); flex:none; }
   .contact-fact .label { color:var(--muted-foreground); }
   .contact-fact a { display:inline-flex; align-items:center; gap:5px; color:var(--foreground); border-bottom:1px solid var(--border); padding-bottom:2px; transition:color 150ms; }
   .contact-fact a:hover { color:var(--muted-foreground); }
