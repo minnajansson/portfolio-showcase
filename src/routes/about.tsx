@@ -15,6 +15,19 @@ const aboutText = [
   'Framåt vill jag fortsätta utforska samspelet mellan design och teknik, utveckla mina kunskaper och få omsätta dem i praktiken. Jag ser fram emot att lära av andra, bidra med mina egna idéer och få nya perspektiv genom framtida samarbeten och projekt.',
 ]
 
+const interests = [
+  { title: 'Visuell kommunikation och grafisk design', text: 'Grafisk formgivning, typografi, färg, fotografi och bildberättande.' },
+  { title: 'UX/UI och digital design', text: 'Användarupplevelser, gränssnitt och interaktionsdesign.' },
+  { title: 'Webbutveckling', text: 'Frontend, webbdesign och samspelet mellan design och kod.' },
+  { title: 'Koncept och kreativ problemlösning', text: 'Idéutveckling och att hitta lösningar på verkliga problem.' },
+]
+
+const skills = [
+  { label: 'Grafisk design och media', text: 'Adobe Creative Cloud (främst Photoshop, Illustrator, Indesign, Premiere Pro), Canva, Capcut.' },
+  { label: 'Webbutveckling', text: 'HTML, CSS, Wordpress, Javascript, SQL, PHP, P5Javascript.' },
+  { label: 'Kontorsprogram', text: 'Microsoft Office (främst Word, Excel och PowerPoint), Google Workspace.' },
+]
+
 export const Route = createFileRoute('/about')({
   head: () => pageMeta('Om mig/kontakt', 'Minna Jansson – student inom medieteknik i Stockholm. Kontakta mig om praktik, arbetsmöjligheter och kreativa samarbeten.'),
   component: About,
@@ -35,8 +48,14 @@ function About() {
       </ul>
       <div className="mt-12 grid gap-12 md:grid-cols-[1.6fr_1fr]">
         <article className="space-y-6 prose-text">{aboutText.map(paragraph => <p key={paragraph.slice(0, 24)}>{paragraph}</p>)}</article>
-        <aside className="border-t border-border pt-6"><img src={portratt.url} alt="Porträtt av Minna Jansson" width={1000} height={1000} className="about-portrait"/></aside>
+        <aside>
+          <img src={portratt.url} alt="Porträtt av Minna Jansson" width={1000} height={1000} className="about-portrait"/>
+          <h2 className="eyebrow mt-10">Intresseområden</h2>
+          <ul className="mt-6 space-y-5">{interests.map(item => <li key={item.title}><h3 className="text-sm font-medium">{item.title}</h3><p className="mt-1 text-xs leading-relaxed text-muted-foreground">{item.text}</p></li>)}</ul>
+        </aside>
       </div>
+      <h2 className="eyebrow mt-16">Tekniska kompetenser</h2>
+      <dl className="mt-7 grid gap-x-12 gap-y-8 md:grid-cols-3">{skills.map(skill => <div key={skill.label}><dt className="text-sm font-medium">{skill.label}</dt><dd className="mt-2 text-xs leading-relaxed text-muted-foreground">{skill.text}</dd></div>)}</dl>
     </section>
     <section className="contact-band"><div><span className="availability"><span className="status-dot"/>Öppen för nya möjligheter</span><h2 className="mt-4 text-3xl font-medium">Låt oss skapa något<br/>meningsfullt tillsammans.</h2><p className="mt-3 text-sm text-muted-foreground">Har du en praktikplats, ett jobb eller en idé i åtanke? Jag hör gärna mer.</p><div className="mt-6 flex flex-wrap items-center gap-4"><Button asChild size="lg"><a href={`mailto:${EMAIL}`}>Hör av dig <ArrowUpRight/></a></Button><Button variant="outline" size="icon" title="Kopiera e-postadress" aria-label="Kopiera e-postadress" onClick={copyEmail}>{copied ? <Check/> : <Copy/>}</Button></div><p className="mt-5 text-sm text-muted-foreground">{EMAIL}</p><p className="mt-2 text-xs text-muted-foreground" aria-live="polite">{copied ? 'E-postadressen har kopierats.' : error ? 'Det gick inte att kopiera. Du kan markera e-postadressen ovan.' : ''}</p></div><Button asChild variant="outline" className="shrink-0" size="lg"><Link to="/work">Se mina projekt <ArrowUpRight/></Link></Button></section>
   </main>
