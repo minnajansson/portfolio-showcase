@@ -13,3 +13,4 @@
 - [x] Verify navigation, filters, and mobile layout.
 - [x] Slå ihop Om mig och Kontakt till en sida (Om mig/kontakt) med porträtt och kontaktdel, omdirigera gamla kontaktadressen.
 - [x] Fyll Om mig/kontakt med Minnas riktiga text, titeln "Bakom arbetet." och kontaktuppgifter (e-post, LinkedIn, plats) under titeln.
+- [x] Ta bort strecket över porträttet och ramarna runt kontaktuppgifterna, återintroducera intresseområden och lägg till tekniska kompetenser.
