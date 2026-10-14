@@ -12,3 +12,4 @@
 - [x] Add about and contact pages with clearly replaceable sample information.
 - [x] Verify navigation, filters, and mobile layout.
 - [x] Slå ihop Om mig och Kontakt till en sida (Om mig/kontakt) med porträtt och kontaktdel, omdirigera gamla kontaktadressen.
+- [x] Fyll Om mig/kontakt med Minnas riktiga text, titeln "Bakom arbetet." och kontaktuppgifter (e-post, LinkedIn, plats) under titeln.
