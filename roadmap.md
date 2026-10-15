@@ -1,5 +1,5 @@
 # Portfolio
-- [ ] Align about portrait with “Om mig” and make all project-list links open the homepage, preserving the old address as a redirect.
+- [x] Align about portrait with “Om mig” and make all project-list links open the homepage, preserving the old address as a redirect.
 - [x] Expand additional image rows across both text columns while keeping three images per desktop row.
 - [x] Set requested homepage project order and verify desktop and mobile layouts.
 - [x] Remove desktop gaps between mixed-format project covers while preserving mobile layout.
