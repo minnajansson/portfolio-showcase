@@ -18,6 +18,12 @@ import styrelsepresentation from '@/assets/styrelsepresentation.webp.asset.json'
 import bild1 from '@/assets/bild1.webp.asset.json'
 import bild2 from '@/assets/bild2.webp.asset.json'
 import moodboard from '@/assets/moodboard.webp.asset.json'
+import santarun from '@/assets/santarun.png.asset.json'
+import runners from '@/assets/runners.png.asset.json'
+import kundresa from '@/assets/kundresa.png.asset.json'
+import persona1 from '@/assets/persona1.png.asset.json'
+import persona2 from '@/assets/persona2.png.asset.json'
+import persona3 from '@/assets/persona3.png.asset.json'
 
 export interface ProjectImage {
   src: string
@@ -90,6 +96,10 @@ export const projects: Project[] = [
     images: [
       { src: intervjuer.url, alt: 'Studenter intervjuar en förbipasserande vid en gångtunnel', caption: 'Intervjuer som underlag för projektets behovsanalys.', width: 1920, height: 1358 },
       { src: enkat.url, alt: 'Stapeldiagram över enkätens svar om hinder för att göra sig av med saker', caption: 'Resultat från enkätundersökningen.', width: 1920, height: 1358 },
+      { src: persona1.url, alt: 'Personaprofil med rubriken Den engagerade, som kan göra mer', caption: 'Persona: Den engagerade.', width: 2000, height: 1414 },
+      { src: persona2.url, alt: 'Personaprofil med rubriken Den begränsade, som behöver funktion', caption: 'Persona: Den begränsade.', width: 2000, height: 1414 },
+      { src: persona3.url, alt: 'Personaprofil med rubriken Den omotiverade', caption: 'Persona: Den omotiverade.', width: 2000, height: 1414 },
+      { src: kundresa.url, alt: 'Kundresediagram med faserna innan, under och efter, med aktiviteter, tankar, känslor och insikter', caption: 'Kundresa över användarens aktiviteter, tankar och insikter.', width: 1920, height: 1080 },
     ],
   },
   {
@@ -114,8 +124,10 @@ export const projects: Project[] = [
       { src: styrelsemote.url, alt: 'SödersRunners affisch med inbjudan till årsmöte', caption: 'Inbjudan till årsmöte.', width: 1536, height: 1920 },
       { src: traning.url, alt: 'SödersRunners träningsaffisch med texten Styrka X Intervaller', caption: 'Träningsaffisch.', width: 1536, height: 1920 },
       { src: styrelsepresentation.url, alt: 'Presentation av SödersRunners ordförande Yassar Anwari', caption: 'Styrelsepresentation.', width: 1536, height: 1920 },
+      { src: santarun.url, alt: 'SödersRunners affisch för Santa Run 10 dec 16:30 med löpare i skogsmörker', caption: 'Affisch för Santa Run.', width: 1080, height: 1350 },
       { src: bild1.url, alt: 'Två löpare från SödersRunners på en skogsstig', caption: 'Fotografi för SödersRunners.', width: 1536, height: 1920 },
       { src: bild2.url, alt: 'En sittande löpare mellan två löpare i rörelse i skogen', caption: 'Fotografi för SödersRunners.', width: 1536, height: 1920 },
+      { src: runners.url, alt: 'Fotocollage med löpning i skogen, rockring på gräs, mingel vid ett mässbord, ett lopp med uppblåsbar portal och en presentation i en hörsal', caption: 'Fotocollage från föreningens aktiviteter.', width: 1080, height: 1350 },
     ],
   },
   {
