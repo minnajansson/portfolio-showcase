@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useState } from 'react'
-import { ArrowUpRight, Check, Copy, Linkedin, Mail, MapPin } from 'lucide-react'
+import { ArrowUpRight, Linkedin, Mail, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { pageMeta } from '@/data/portfolio'
 import portratt from '@/assets/minna-portratt.png.asset.json'

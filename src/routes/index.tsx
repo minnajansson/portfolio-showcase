@@ -2,7 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { ArrowUpRight, ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ProjectGallery } from '@/components/portfolio/project-gallery'
-import { ContactBand } from '@/components/portfolio/site-chrome'
+import { NextBand } from '@/components/portfolio/site-chrome'
 import { pageMeta } from '@/data/portfolio'
 
 export const Route = createFileRoute('/')({ head: () => pageMeta('Portfolio', 'Minna Janssons utvalda projekt, kreativa process och portfolio inom digital design. Öppen för praktik och arbete.'), component: Index })
