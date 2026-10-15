@@ -54,6 +54,6 @@ function About() {
           <dl className="mt-4 space-y-4">{skills.map(skill => <div key={skill.label}><dt className="text-sm font-medium">{skill.label}</dt><dd className="mt-1 text-xs leading-relaxed text-muted-foreground">{skill.text}</dd></div>)}</dl>
         </aside>
     </section>
-    <NextBand><Button asChild size="lg"><Link to="/">Mina projekt <ArrowUpRight/></Link></Button></NextBand>
+    <NextBand><Button asChild variant="outline" size="lg"><Link to="/">Mina projekt <ArrowUpRight/></Link></Button></NextBand>
   </main>
 }
