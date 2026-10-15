@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { ArrowUpRight, Linkedin, Mail, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { NextBand } from '@/components/portfolio/site-chrome'
 import { pageMeta } from '@/data/portfolio'
 import portratt from '@/assets/minna-portratt.png.asset.json'
 
@@ -33,9 +34,6 @@ export const Route = createFileRoute('/about')({
 })
 
 function About() {
-  const [copied, setCopied] = useState(false)
-  const [error, setError] = useState(false)
-  async function copyEmail() { try { await navigator.clipboard.writeText(EMAIL); setCopied(true); setError(false); setTimeout(() => setCopied(false), 2500) } catch { setError(true) } }
   return <main className="site-width fade-in">
     <section className="about-layout py-16">
       <div>
@@ -56,6 +54,6 @@ function About() {
           <dl className="mt-4 space-y-4">{skills.map(skill => <div key={skill.label}><dt className="text-sm font-medium">{skill.label}</dt><dd className="mt-1 text-xs leading-relaxed text-muted-foreground">{skill.text}</dd></div>)}</dl>
         </aside>
     </section>
-    <section className="contact-band"><div><span className="availability"><span className="status-dot"/>Öppen för nya möjligheter</span><h2 className="mt-4 text-3xl font-medium">Låt oss skapa något<br/>meningsfullt tillsammans.</h2><p className="mt-3 text-sm text-muted-foreground">Har du en praktikplats, ett jobb eller en idé i åtanke? Jag hör gärna mer.</p><div className="mt-6 flex flex-wrap items-center gap-4"><Button asChild size="lg"><a href={`mailto:${EMAIL}`}>Hör av dig <ArrowUpRight/></a></Button><Button variant="outline" size="icon" title="Kopiera e-postadress" aria-label="Kopiera e-postadress" onClick={copyEmail}>{copied ? <Check/> : <Copy/>}</Button></div><p className="mt-5 text-sm text-muted-foreground">{EMAIL}</p><p className="mt-2 text-xs text-muted-foreground" aria-live="polite">{copied ? 'E-postadressen har kopierats.' : error ? 'Det gick inte att kopiera. Du kan markera e-postadressen ovan.' : ''}</p></div><Button asChild variant="outline" className="shrink-0" size="lg"><Link to="/">Se mina projekt <ArrowUpRight/></Link></Button></section>
+    <NextBand><Button asChild size="lg"><Link to="/">Mina projekt <ArrowUpRight/></Link></Button></NextBand>
   </main>
 }
