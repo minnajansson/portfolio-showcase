@@ -17,7 +17,7 @@ function ProjectDetail() {
   const eyebrow = [project.category, project.year].filter(Boolean).join(' / ')
   const portrait = project.hero.height > project.hero.width
   return <main className="site-width fade-in py-12">
-    <Button asChild variant="link" className="p-0 text-muted-foreground"><Link to="/work"><ArrowLeft/> Tillbaka till projekten</Link></Button>
+    <Button asChild variant="link" className="p-0 text-muted-foreground"><Link to="/"><ArrowLeft/> Tillbaka till projekten</Link></Button>
     <div className={`detail-top${portrait ? ' detail-top--portrait' : ''}`}>
       <div>
         <p className="eyebrow text-muted-foreground">{eyebrow}</p>

@@ -91,6 +91,8 @@
   .case-figure { min-width:0; }
   .subtitle-strong { color:var(--foreground); font-weight:700; }
   .prose-text { font-size: 16px; line-height: 1.9; color:var(--muted-foreground); }
+  .about-layout { display:grid; grid-template-columns:minmax(0,1fr); gap:48px; align-items:start; }
+  .about-layout > * { min-width:0; }
   .about-portrait { width:100%; max-width:340px; height:auto; display:block; border-radius:6px; }
   .contact-facts { list-style:none; display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:16px; padding-block:0; }
   .contact-fact { display:flex; align-items:center; gap:7px; font-size:12px; }
@@ -102,6 +104,9 @@
   .fade-in { animation: reveal 600ms ease both; }
 }
 @keyframes reveal { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@media(min-width: 768px) {
+  .about-layout { grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); }
+}
 @media(max-width: 700px) {
   .site-width { width: calc(100% - 40px); }
   .site-header { min-height:80px; height:auto; flex-wrap:wrap; column-gap:20px; row-gap:8px; padding-block:18px; }

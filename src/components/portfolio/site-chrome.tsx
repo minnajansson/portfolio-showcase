@@ -3,7 +3,7 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export function SiteHeader() {
- return <header className="site-width site-header"><Link to="/" className="wordmark" aria-label="Minna Jansson – startsida">Minna Jansson<span className="text-muted-foreground">.</span></Link><nav className="flex items-center gap-4 sm:gap-9" aria-label="Huvudmeny"><Link to="/work" className="nav-link">Projekt</Link><Link to="/about" className="nav-link">Om mig/kontakt</Link></nav></header>
+ return <header className="site-width site-header"><Link to="/" className="wordmark" aria-label="Minna Jansson – startsida">Minna Jansson<span className="text-muted-foreground">.</span></Link><nav className="flex items-center gap-4 sm:gap-9" aria-label="Huvudmeny"><Link to="/" activeOptions={{ exact: true }} className="nav-link">Projekt</Link><Link to="/about" className="nav-link">Om mig/kontakt</Link></nav></header>
 }
 export function ContactBand() {
  return <section className="contact-band"><div><p className="eyebrow text-muted-foreground">Vad händer härnäst?</p><h2 className="mt-3 text-3xl font-medium">Bra samarbete börjar med ett samtal.</h2><p className="mt-3 text-sm text-muted-foreground">Öppen för praktik, nya utmaningar och givande samarbeten.</p></div><Button asChild variant="outline" className="shrink-0" size="lg"><Link to="/about">Hör av dig <ArrowUpRight/></Link></Button></section>
